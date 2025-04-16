@@ -48,7 +48,8 @@ async def get_question():
         "options": question["options"]
     }
 
-@router.get("/answer")
+#changed from get to post  by Navneet
+@router.post("/answer")
 async def submit_answer(data: dict):
     question_id = data.get("id")
     answer = data.get("answer")

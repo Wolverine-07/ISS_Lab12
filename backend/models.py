@@ -1,7 +1,8 @@
 from pydantic import BaseModel
 
-class Item():
-    name: int
+# inserted BaseModel and changed name from int to str by navneet
+class Item(BaseModel):
+    name: str
     description: str
 
 class User(BaseModel):
